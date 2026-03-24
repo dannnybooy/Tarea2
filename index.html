@@ -2,54 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- 
-    ========================================
-    EJERCICIO PARA ESTUDIANTES - HTML
-    ========================================
-    
-    Este archivo contiene ERRORES INTENCIONALES que debes encontrar y corregir.
-    
-    INSTRUCCIONES:
-    1. Busca los comentarios que comienzan con "ERROR #" 
-    2. Lee la PISTA para entender qué está mal
-    3. Corrige el código y observa los cambios en el navegador
-    
-    TOTAL DE ERRORES EN HTML: 10
-    
-    TEMAS QUE PRACTICARÁS:
-    - Clases CSS correctas y ortografía
-    - Atributos href para enlaces internos
-    - Iconos de Font Awesome
-    - Estructura semántica
-    - Modificadores de clases BEM
-    
-    TIP: Usa las herramientas de desarrollo del navegador (F12) 
-         para inspeccionar elementos y ver qué estilos faltan.
-    
-    ¡Buena suerte!
-    ========================================
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de [Tu Nombre] - Ingeniero en Tecnologías de la Información">
-    <title>Tu Nombre | Portfolio</title>
+    <title>Leonardo Daniel Velazquez Garcia | Portfolio</title>
     
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Styles -->
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ========== HEADER ========== -->
+    
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="nav__logo">
-                <span class="logo__bracket">&lt;</span> Leonardo Daniel Velazquez Garcia<span class="logo__bracket">/&gt;</span>
+                <span class="logo__bracket">&lt;</span> Leonardo Daniel Velazquez Garcia <span class="logo__bracket">/&gt;</span>
             </a>
             
             <!-- Checkbox para menú móvil (CSS only) -->
@@ -66,12 +39,12 @@
                 <ul class="nav__list">
                     <li class="nav__item">
                         <label for="nav-toggle">
-                            <a href="#home" class="nav__link">Inicio</a>
+                            <a href="#home" class="nav__link">Home</a>
                         </label>
                     </li>
                     <li class="nav__item">
                         <label for="nav-toggle">
-                            <a href="#interests" class="nav__link">Intereses</a>
+                            <a href="#interests" class="nav__link">Interests</a>
                         </label>
                     </li>
                     <li class="nav__item">
@@ -81,12 +54,12 @@
                     </li>
                     <li class="nav__item">
                         <label for="nav-toggle">
-                            <a href="#projects" class="nav__link">Proyectos</a>
+                            <a href="#projects" class="nav__link">Proyects</a>
                         </label>
                     </li>
                     <li class="nav__item">
                         <label for="nav-toggle">
-                            <a href="#contact" class="nav__link">Contacto</a>
+                            <a href="#contact" class="nav__link">Contact</a>
                         </label>
                     </li>
                 </ul>
@@ -100,25 +73,20 @@
             <div class="hero__container container">
                 <div class="hero__content">
                     <span class="hero__greeting">¡Hola! Soy</span>
-                    <h1 class="hero__title">Leonardo Daniel Velazquez Garcia</h1>
+                    <h1 class="hero__title"> Leonardo Daniel Velazquez Garcia </h1>
                     <h2 class="hero__subtitle">
-                        <span class="highlight">Ingeniero de Software</span> en Crecimiento
+                        <span class="highlight">Software Engineer </span> growing
                     </h2>
                     <p class="hero__description">
-                        Recién egresado de Tecnologías de la Información apasionado por crear 
-                        soluciones digitales innovadoras. Combino creatividad técnica con un 
-                        enfoque orientado a resultados para transformar ideas en código funcional.
+                        Recent graduate in Applied Mathematics and Computing, passionate about creating innovative digital solutions. I combine technical creativity with a results-oriented approach to transform ideas into working code.
                     </p>
-                    <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
-                         PISTA: Revisa las clases del botón, falta una clase -->
                     <div class="hero__buttons">
                         <a href="#projects" class="btn btn--primary>
-                            <i class="fas fa-rocket"></i> Ver mis proyectos
+                            <i class="fas fa-rocket"></i> See my proyects
                         </a>
-                        <!-- ERROR 2: El enlace no lleva a la sección correcta
-                             PISTA: El ID de la sección de contacto es "contact", verifica el href -->
+                        
                         <a href="#contact" class="btn btn--outline">
-                            <i class="fas fa-envelope"></i> Contáctame
+                            <i class="fas fa-envelope"></i> Contact me
                         </a>
                     </div>
                 </div>
@@ -147,25 +115,23 @@
         <section class="interests section" id="interests">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">Lo que me apasiona</span>
-                    <h2 class="section__title">Intereses & Especialidades</h2>
+                    <span class="section__subtitle">ME</span>
+                    <h2 class="section__title">Softs & Skills</h2>
                     <p class="section__description">
-                        Áreas tecnológicas que me entusiasman y en las que busco especializarme
+                        Areas of technology that I like and would like to dedicate myself to
                     </p>
                 </div>
                 
                 <div class="interests__grid">
-                    <!-- Card 1 -->
-                    <!-- ERROR 3: Esta card no tiene el icono visible
-                         PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
+                  
                     <article class="interest__card">
                         <div class="card__icon">
                             
                         </div>
-                        <h3 class="card__title">Desarrollo Web</h3>
+                        <h3 class="card__title"> Web Development</h3>
                         <p class="card__description">
-                            Creación de aplicaciones web modernas con tecnologías como 
-                            HTML5, CSS3, JavaScript y frameworks actuales.
+                            web application creation with 
+                            HTML5, CSS3, JavaScript and actual frameworks.
                         </p>
                         <div class="card__tags">
                             <span class="tag">HTML/CSS</span>
@@ -174,22 +140,19 @@
                         </div>
                     </article>
                     
-                    <!-- Card 2 -->
-                    <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
-                         PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
+                    
                     <article class="interest__card">
                         <div class="card__icon">
                             <i class="fas fa-shield-halved"></i>
                         </div>
-                        <h3 class="card__title">Ciberseguridad</h3>
+                        <h3 class="card__title">Cybersecurity</h3>
                         <p class="card__description">
-                            Protección de sistemas y datos, análisis de vulnerabilidades 
-                            y mejores prácticas de seguridad informática.
+                            Systems and data protection, vulnerability analysis, and cybersecurity best practices.
                         </p>
                         <div class="card__tags">
-                            <span class="tag">Seguridad Web</span>
+                            <span class="tag">Web Security</span>
                             <span class="tag">Pentesting</span>
-                            <span class="tag">Redes</span>
+                            <span class="tag">Networks</span>
                         </div>
                     </article>
                     
@@ -200,8 +163,7 @@
                         </div>
                         <h3 class="card__title">Inteligencia Artificial</h3>
                         <p class="card__description">
-                            Machine Learning, procesamiento de datos y desarrollo de 
-                            soluciones inteligentes con Python.
+                            Machine learning, data processing, and developing smart solutions with Python.
                         </p>
                         <div class="card__tags">
                             <span class="tag">Python</span>
@@ -215,10 +177,9 @@
                         <div class="card__icon">
                             <i class="fas fa-database"></i>
                         </div>
-                        <h3 class="card__title">Bases de Datos</h3>
+                        <h3 class="card__title">Databases</hDesign,>
                         <p class="card__description">
-                            Diseño, administración y optimización de bases de datos 
-                            relacionales y NoSQL.
+                            Design, administration and optimization of relational and NoSQL databases.
                         </p>
                         <div class="card__tags">
                             <span class="tag">MySQL</span>
@@ -232,10 +193,9 @@
                         <div class="card__icon">
                             <i class="fas fa-mobile-screen-button"></i>
                         </div>
-                        <h3 class="card__title">Desarrollo Móvil</h3>
+                        <h3 class="card__title">Mobile Development</h3>
                         <p class="card__description">
-                            Creación de aplicaciones móviles nativas y multiplataforma 
-                            para Android e iOS.
+                            Creation of native and cross-platform mobile applications for Android and iOS.
                         </p>
                         <div class="card__tags">
                             <span class="tag">Flutter</span>
@@ -251,8 +211,7 @@
                         </div>
                         <h3 class="card__title">Cloud Computing</h3>
                         <p class="card__description">
-                            Servicios en la nube, arquitecturas escalables y 
-                            despliegue de aplicaciones.
+                            Cloud services, scalable architectures, and application deployment.
                         </p>
                         <div class="card__tags">
                             <span class="tag">AWS</span>
